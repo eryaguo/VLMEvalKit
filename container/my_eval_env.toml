@@ -1,0 +1,15 @@
+# path to an image file or reference to a registry
+image = "/store/swissai/a06/demo/my_demo.sqsh"
+
+# "src_path:trg_path" mounts the src_path on the host inside the container at the trg_path.
+mounts = [
+  "/iopsstor/scratch/cscs/eguo:/iopsstor/scratch/cscs/eguo",
+  "/store/swissai/a06:/store/swissai/a06",
+]
+
+# The initial directory in the container.
+workdir = "/iopsstor/scratch/cscs/eguo"
+
+[annotations]
+com.hooks.aws_ofi_nccl.enabled = "true"
+com.hooks.aws_ofi_nccl.variant = "cuda12"

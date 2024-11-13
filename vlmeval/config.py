@@ -51,6 +51,7 @@ ungrouped = {
 }
 
 api_models = {
+    'SWISSAI-LLAMA3.2-90': partial(SWISSAIGPT4V, model='swissai-meta-llama/Llama-3.2-90B-Vision-Instruct', temperature=0, img_size=512, img_detail='low', retry=10),
     # GPT
     'GPT4V': partial(GPT4V, model='gpt-4-1106-vision-preview', temperature=0, img_size=512, img_detail='low', retry=10),
     'GPT4V_HIGH': partial(GPT4V, model='gpt-4-1106-vision-preview', temperature=0, img_size=-1, img_detail='high', retry=10),
@@ -192,6 +193,7 @@ idefics_series = {
 
     # Idefics3 follows Idefics2 Pattern
     'Idefics3-8B-Llama3': partial(IDEFICS2, model_path='HuggingFaceM4/Idefics3-8B-Llama3'),
+    'Idefics3-8B-Llama3-swissai': partial(IDEFICS2, model_path='HuggingFaceM4/Idefics3-8B-Llama3-swissai'),
 
 }
 

@@ -1,3 +1,4 @@
+from .swissai import SWISSAIOpenAIWrapper, SWISSAIGPT4V
 from .gpt import OpenAIWrapper, GPT4V
 from .hf_chat_model import HFChatModel
 from .gemini import GeminiWrapper, GeminiProVision
@@ -15,6 +16,7 @@ from .jt_vl_chat import JTVLChatAPI
 
 
 __all__ = [
+    'SWISSAIOpenAIWrapper', 'SWISSAIGPT4V',
     'OpenAIWrapper', 'HFChatModel', 'GeminiWrapper', 'GPT4V',
     'GeminiProVision', 'QwenVLWrapper', 'QwenVLAPI', 'QwenAPI',
     'Claude3V', 'Claude_Wrapper', 'Reka', 'GLMVisionAPI',
